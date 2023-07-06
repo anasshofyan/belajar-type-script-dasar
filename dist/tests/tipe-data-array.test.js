@@ -9,4 +9,8 @@ describe("tipe data array", () => {
         const hobbies = ["mancing", "berenang", "makan"];
         console.info("tipe data array", hobbies);
     });
+    it("Should support tuple", () => {
+        const biodata = ["anas", 20];
+        console.info("tipe data array tuple", biodata);
+    });
 });
