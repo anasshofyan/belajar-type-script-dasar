@@ -1,10 +1,12 @@
+export type ID = number | string;
+
 export type Category = {
-  id: number;
+  id: ID;
   name: string;
 };
 
 export type Product = {
-  id: number;
+  id: ID;
   name: string;
   price: number;
   category: Category;

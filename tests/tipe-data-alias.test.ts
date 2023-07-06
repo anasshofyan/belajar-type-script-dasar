@@ -3,7 +3,7 @@ import { Category, Product } from "../src/type-alias";
 describe("tipe data alias", () => {
   it("should support in typescripe", () => {
     const category: Category = {
-      id: 1,
+      id: "121",
       name: "makanan",
     };
 
