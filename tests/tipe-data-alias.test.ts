@@ -5,6 +5,7 @@ describe("tipe data alias", () => {
     const category: Category = {
       id: "121",
       name: "makanan",
+      description: "makanan sehat",
     };
 
     const product: Product = {
