@@ -34,4 +34,17 @@ describe("interface", () => {
 
     expect(myArray[0]).toBe("Bob");
   });
+
+  it("should support indexable interface for non number index", () => {
+    interface Dictionary {
+      [index: string]: string;
+    }
+
+    const dictionary: Dictionary = {
+      name: "john doe",
+      email: "haha@haha.com",
+    };
+
+    expect(dictionary["name"]).toBe("john doe");
+  });
 });

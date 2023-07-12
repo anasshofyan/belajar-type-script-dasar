@@ -21,4 +21,11 @@ describe("interface", function () {
         var myArray = ["Bob", "Fred"];
         expect(myArray[0]).toBe("Bob");
     });
+    it("should support indexable interface for non number index", function () {
+        var dictionary = {
+            name: "john doe",
+            email: "haha@haha.com"
+        };
+        expect(dictionary["name"]).toBe("john doe");
+    });
 });
