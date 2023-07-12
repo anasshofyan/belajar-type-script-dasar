@@ -12,4 +12,16 @@ describe("interface", () => {
 
     console.info("interface", seller);
   });
+
+  it("should support function interface", () => {
+    interface Adder {
+      (a: number, b: number): number;
+    }
+
+    const add: Adder = (a, b) => {
+      return a + b;
+    };
+
+    expect(add(1, 2)).toBe(3);
+  });
 });

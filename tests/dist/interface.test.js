@@ -11,4 +11,10 @@ describe("interface", function () {
         };
         console.info("interface", seller);
     });
+    it("should support function interface", function () {
+        var add = function (a, b) {
+            return a + b;
+        };
+        expect(add(1, 2)).toBe(3);
+    });
 });
