@@ -24,4 +24,14 @@ describe("interface", () => {
 
     expect(add(1, 2)).toBe(3);
   });
+
+  it("should support indexable interface", () => {
+    interface StringArray {
+      [index: number]: string;
+    }
+
+    const myArray: StringArray = ["Bob", "Fred"];
+
+    expect(myArray[0]).toBe("Bob");
+  });
 });

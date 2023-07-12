@@ -17,4 +17,8 @@ describe("interface", function () {
         };
         expect(add(1, 2)).toBe(3);
     });
+    it("should support indexable interface", function () {
+        var myArray = ["Bob", "Fred"];
+        expect(myArray[0]).toBe("Bob");
+    });
 });
