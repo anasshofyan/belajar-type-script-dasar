@@ -6,7 +6,8 @@ describe("interface", function () {
             id: 1,
             name: "john doe",
             email: "hallo@gmail.com",
-            address: "jalan jalan"
+            address: "jalan jalan",
+            nip: "1234567890"
         };
         console.info("interface", seller);
     });

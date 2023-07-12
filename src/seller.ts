@@ -3,4 +3,5 @@ export interface Seller {
   name: string;
   email: string;
   address?: string;
+  readonly nip: string;
 }
